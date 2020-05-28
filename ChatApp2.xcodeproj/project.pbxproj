@@ -3,27 +3,61 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1146046A9AA1C121575E0841 /* Pods_ChatApp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059A5B93F52B4C8A5BC8F69C /* Pods_ChatApp2.framework */; };
+		18367C3424769E0600284C41 /* ChatLoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18367C3324769E0600284C41 /* ChatLoginCell.swift */; };
+		1848DDCC24698F7800A7C4DE /* LoginViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1848DDCB24698F7800A7C4DE /* LoginViewControllerExtensions.swift */; };
+		1848DDCE2469903400A7C4DE /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1848DDCD2469903400A7C4DE /* UIColorExtensions.swift */; };
+		1869058E2470728E001524B5 /* ChatLoginControllerExtensions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869058D2470728E001524B5 /* ChatLoginControllerExtensions .swift */; };
 		187518EC246412750088C73F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187518EB246412750088C73F /* AppDelegate.swift */; };
 		187518EE246412750088C73F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187518ED246412750088C73F /* SceneDelegate.swift */; };
-		187518F0246412750088C73F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187518EF246412750088C73F /* ViewController.swift */; };
+		187518F0246412750088C73F /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187518EF246412750088C73F /* MessageTableViewController.swift */; };
 		187518F3246412750088C73F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187518F1246412750088C73F /* Main.storyboard */; };
 		187518F52464127A0088C73F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187518F42464127A0088C73F /* Assets.xcassets */; };
 		187518F82464127A0088C73F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187518F62464127A0088C73F /* LaunchScreen.storyboard */; };
+		18751901246412DD0088C73F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18751900246412DD0088C73F /* LoginViewController.swift */; };
+		187519032464133E0088C73F /* UIViewController + Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187519022464133E0088C73F /* UIViewController + Helper.swift */; };
+		1875190C2465904F0088C73F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1875190B2465904F0088C73F /* GoogleService-Info.plist */; };
+		1875190E24680B700088C73F /* NewMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875190D24680B700088C73F /* NewMessageTableViewController.swift */; };
+		187519102468183E0088C73F /* NewMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875190F2468183E0088C73F /* NewMessageTableViewCell.swift */; };
+		1875191424681F510088C73F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875191324681F510088C73F /* User.swift */; };
+		189D7FF62470047C00B3DB96 /* ChatLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189D7FF52470047C00B3DB96 /* ChatLoginController.swift */; };
+		18B3BE00246AC5AD0091DE31 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3BDFF246AC5AD0091DE31 /* NetworkManager.swift */; };
+		18B3BE02246AD4290091DE31 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3BE01246AD4290091DE31 /* UIImageViewExtensions.swift */; };
+		18B5438C24717B210003E221 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5438B24717B210003E221 /* Messages.swift */; };
+		18B5438E24717E4C0003E221 /* MessageTableViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5438D24717E4C0003E221 /* MessageTableViewControllerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		059A5B93F52B4C8A5BC8F69C /* Pods_ChatApp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatApp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18367C3324769E0600284C41 /* ChatLoginCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLoginCell.swift; sourceTree = "<group>"; };
+		1848DDCB24698F7800A7C4DE /* LoginViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerExtensions.swift; sourceTree = "<group>"; };
+		1848DDCD2469903400A7C4DE /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		1869058D2470728E001524B5 /* ChatLoginControllerExtensions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatLoginControllerExtensions .swift"; sourceTree = "<group>"; };
 		187518E8246412750088C73F /* ChatApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187518EB246412750088C73F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187518ED246412750088C73F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		187518EF246412750088C73F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		187518EF246412750088C73F /* MessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		187518F2246412750088C73F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		187518F42464127A0088C73F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187518F72464127A0088C73F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187518F92464127A0088C73F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18751900246412DD0088C73F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		187519022464133E0088C73F /* UIViewController + Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController + Helper.swift"; sourceTree = "<group>"; };
+		1875190B2465904F0088C73F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Users/davidsaley/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1875190D24680B700088C73F /* NewMessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageTableViewController.swift; sourceTree = "<group>"; };
+		1875190F2468183E0088C73F /* NewMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageTableViewCell.swift; sourceTree = "<group>"; };
+		1875191324681F510088C73F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		189D7FF52470047C00B3DB96 /* ChatLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLoginController.swift; sourceTree = "<group>"; };
+		18B3BDFF246AC5AD0091DE31 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		18B3BE01246AD4290091DE31 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		18B5438B24717B210003E221 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		18B5438D24717E4C0003E221 /* MessageTableViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewControllerCell.swift; sourceTree = "<group>"; };
+		8AEA74BF3D0492932C1EBAB5 /* Pods-ChatApp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp2.debug.xcconfig"; path = "Target Support Files/Pods-ChatApp2/Pods-ChatApp2.debug.xcconfig"; sourceTree = "<group>"; };
+		D319B19B4973FB0D4F6BBF44 /* Pods-ChatApp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp2.release.xcconfig"; path = "Target Support Files/Pods-ChatApp2/Pods-ChatApp2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +65,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1146046A9AA1C121575E0841 /* Pods_ChatApp2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1848DDCA24698F4200A7C4DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1848DDCB24698F7800A7C4DE /* LoginViewControllerExtensions.swift */,
+				1848DDCD2469903400A7C4DE /* UIColorExtensions.swift */,
+				18B3BE01246AD4290091DE31 /* UIImageViewExtensions.swift */,
+				1869058D2470728E001524B5 /* ChatLoginControllerExtensions .swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		187518DF246412750088C73F = {
 			isa = PBXGroup;
 			children = (
 				187518EA246412750088C73F /* ChatApp2 */,
 				187518E9246412750088C73F /* Products */,
+				1DFE64024FAF680A67894F03 /* Pods */,
+				79DC5DE8AC23969728E924FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +104,84 @@
 		187518EA246412750088C73F /* ChatApp2 */ = {
 			isa = PBXGroup;
 			children = (
+				18B3BDFE246AC5970091DE31 /* Manager  */,
+				18751904246413450088C73F /* Helper  */,
+				1875191224681F2C0088C73F /* Model */,
+				187518FF246412CB0088C73F /* ViewController  */,
+				18751911246818440088C73F /* cell */,
+				1848DDCA24698F4200A7C4DE /* Extensions */,
 				187518EB246412750088C73F /* AppDelegate.swift */,
 				187518ED246412750088C73F /* SceneDelegate.swift */,
-				187518EF246412750088C73F /* ViewController.swift */,
 				187518F1246412750088C73F /* Main.storyboard */,
 				187518F42464127A0088C73F /* Assets.xcassets */,
 				187518F62464127A0088C73F /* LaunchScreen.storyboard */,
 				187518F92464127A0088C73F /* Info.plist */,
+				1875190B2465904F0088C73F /* GoogleService-Info.plist */,
 			);
 			path = ChatApp2;
+			sourceTree = "<group>";
+		};
+		187518FF246412CB0088C73F /* ViewController  */ = {
+			isa = PBXGroup;
+			children = (
+				18751900246412DD0088C73F /* LoginViewController.swift */,
+				187518EF246412750088C73F /* MessageTableViewController.swift */,
+				1875190D24680B700088C73F /* NewMessageTableViewController.swift */,
+				189D7FF52470047C00B3DB96 /* ChatLoginController.swift */,
+			);
+			path = "ViewController ";
+			sourceTree = "<group>";
+		};
+		18751904246413450088C73F /* Helper  */ = {
+			isa = PBXGroup;
+			children = (
+				187519022464133E0088C73F /* UIViewController + Helper.swift */,
+			);
+			path = "Helper ";
+			sourceTree = "<group>";
+		};
+		18751911246818440088C73F /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				1875190F2468183E0088C73F /* NewMessageTableViewCell.swift */,
+				18B5438D24717E4C0003E221 /* MessageTableViewControllerCell.swift */,
+				18367C3324769E0600284C41 /* ChatLoginCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		1875191224681F2C0088C73F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1875191324681F510088C73F /* User.swift */,
+				18B5438B24717B210003E221 /* Messages.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18B3BDFE246AC5970091DE31 /* Manager  */ = {
+			isa = PBXGroup;
+			children = (
+				18B3BDFF246AC5AD0091DE31 /* NetworkManager.swift */,
+			);
+			path = "Manager ";
+			sourceTree = "<group>";
+		};
+		1DFE64024FAF680A67894F03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AEA74BF3D0492932C1EBAB5 /* Pods-ChatApp2.debug.xcconfig */,
+				D319B19B4973FB0D4F6BBF44 /* Pods-ChatApp2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		79DC5DE8AC23969728E924FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				059A5B93F52B4C8A5BC8F69C /* Pods_ChatApp2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 187518FC2464127A0088C73F /* Build configuration list for PBXNativeTarget "ChatApp2" */;
 			buildPhases = (
+				6548DD929358E0766238C94F /* [CP] Check Pods Manifest.lock */,
 				187518E4246412750088C73F /* Sources */,
 				187518E5246412750088C73F /* Frameworks */,
 				187518E6246412750088C73F /* Resources */,
+				25546B09F5A3976FE41B5E10 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				187518F82464127A0088C73F /* LaunchScreen.storyboard in Resources */,
+				1875190C2465904F0088C73F /* GoogleService-Info.plist in Resources */,
 				187518F52464127A0088C73F /* Assets.xcassets in Resources */,
 				187518F3246412750088C73F /* Main.storyboard in Resources */,
 			);
@@ -133,14 +253,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25546B09F5A3976FE41B5E10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatApp2/Pods-ChatApp2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatApp2/Pods-ChatApp2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatApp2/Pods-ChatApp2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6548DD929358E0766238C94F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatApp2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		187518E4246412750088C73F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187518F0246412750088C73F /* ViewController.swift in Sources */,
+				18367C3424769E0600284C41 /* ChatLoginCell.swift in Sources */,
+				187518F0246412750088C73F /* MessageTableViewController.swift in Sources */,
+				1848DDCC24698F7800A7C4DE /* LoginViewControllerExtensions.swift in Sources */,
 				187518EC246412750088C73F /* AppDelegate.swift in Sources */,
+				18751901246412DD0088C73F /* LoginViewController.swift in Sources */,
+				18B3BE00246AC5AD0091DE31 /* NetworkManager.swift in Sources */,
 				187518EE246412750088C73F /* SceneDelegate.swift in Sources */,
+				1869058E2470728E001524B5 /* ChatLoginControllerExtensions .swift in Sources */,
+				18B5438C24717B210003E221 /* Messages.swift in Sources */,
+				1875191424681F510088C73F /* User.swift in Sources */,
+				1875190E24680B700088C73F /* NewMessageTableViewController.swift in Sources */,
+				189D7FF62470047C00B3DB96 /* ChatLoginController.swift in Sources */,
+				18B5438E24717E4C0003E221 /* MessageTableViewControllerCell.swift in Sources */,
+				187519032464133E0088C73F /* UIViewController + Helper.swift in Sources */,
+				187519102468183E0088C73F /* NewMessageTableViewCell.swift in Sources */,
+				18B3BE02246AD4290091DE31 /* UIImageViewExtensions.swift in Sources */,
+				1848DDCE2469903400A7C4DE /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +398,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -275,6 +452,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -282,10 +460,13 @@
 		};
 		187518FD2464127A0088C73F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AEA74BF3D0492932C1EBAB5 /* Pods-ChatApp2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ChatApp2/ChatApp2.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4TVGCW6P42;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChatApp2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,6 +474,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = David.ChatApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,10 +482,13 @@
 		};
 		187518FE2464127A0088C73F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D319B19B4973FB0D4F6BBF44 /* Pods-ChatApp2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ChatApp2/ChatApp2.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4TVGCW6P42;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChatApp2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +496,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = David.ChatApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

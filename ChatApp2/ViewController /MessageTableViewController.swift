@@ -12,7 +12,7 @@ class MessageTableViewController: UITableViewController {
     var messages:[Message] = [Message]()
     var messagesDictionary = [String: Message]()
     let cellIdentifire = String(describing: MessageTableViewControllerCell.self)
-    
+    var timer: Timer?
     
     
     override func viewDidLoad() {
@@ -72,13 +72,20 @@ class MessageTableViewController: UITableViewController {
                             return false
                         }
                     }
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData()
-                    }
+                    self.timer?.invalidate()
+                    self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.handleReloadTable), userInfo: nil, repeats: false)
                 }
             }, withCancel: nil)
             
         }, withCancel: nil)
+    }
+    
+    
+    //MARK: - Reload tableView
+    @objc private func handleReloadTable() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
     
     //MARK: - UI logic

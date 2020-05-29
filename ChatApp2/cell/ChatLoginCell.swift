@@ -27,15 +27,26 @@ class ChatLoginCell: UICollectionViewCell {
         return view
     }()
     
+    let profileImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.layer.cornerRadius = 16
+        imageView.layer.masksToBounds = true
+        imageView.contentMode = .scaleAspectFill
+        return imageView
+    }()
+    
+    
     var bubbleWidthAncorn: NSLayoutConstraint?
+    var bubbleViewRightAncorn: NSLayoutConstraint?
+    var bubbleViewLeftAncorn: NSLayoutConstraint?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         bubbleViewConstraints()
         textViewConstraints()
-        
-        
+        profileImageViewConstraints()
         
     }
     
@@ -47,12 +58,17 @@ class ChatLoginCell: UICollectionViewCell {
     
     private func bubbleViewConstraints() {
         addSubview(bubbleView)
-
-        bubbleView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10).isActive = true
+        
+        bubbleViewRightAncorn = bubbleView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10)
+        bubbleViewRightAncorn?.isActive = true
+        
         bubbleView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         
         bubbleWidthAncorn = bubbleView.widthAnchor.constraint(equalToConstant: 200)
         bubbleWidthAncorn?.isActive = true
+        
+        bubbleViewLeftAncorn = bubbleView.leftAnchor.constraint(equalTo: profileImageView.rightAnchor,constant: 8)
+        
         
         bubbleView.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
         
@@ -66,6 +82,15 @@ class ChatLoginCell: UICollectionViewCell {
         textView.rightAnchor.constraint(equalTo: bubbleView.rightAnchor).isActive = true
         textView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         textView.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
+    }
+    
+    private func profileImageViewConstraints() {
+        addSubview(profileImageView)
+        
+        profileImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8).isActive = true
+        profileImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        profileImageView.widthAnchor.constraint(equalToConstant: 32).isActive = true
+        profileImageView.heightAnchor.constraint(equalToConstant: 32).isActive = true
     }
     
 }

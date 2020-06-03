@@ -33,6 +33,8 @@ class ChatLoginController: UICollectionViewController {
     
     var containerViewBottomAnchor: NSLayoutConstraint?
     
+    
+    //MARK: - Message text field
     lazy var inputContainerView: UIView = {
         let containerView = UIView()
         containerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50)
@@ -77,15 +79,18 @@ class ChatLoginController: UICollectionViewController {
         collectionView.register(ChatLoginCell.self, forCellWithReuseIdentifier: cellIndetifire)
         
         collectionView.keyboardDismissMode = .interactive
-
+        
     }
     
+    
+    //MARK: - ViewDidDisappear
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
         NotificationCenter.default.removeObserver(self)
     }
     
+    //MARK: - ViewWillTransition
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         collectionView.collectionViewLayout.invalidateLayout()
     }
@@ -118,10 +123,10 @@ class ChatLoginController: UICollectionViewController {
             
             guard let messageId = childRef.key else {return}
             
-            let userMessagesRef = Database.database().reference().child("user-messages").child(fromId).child(messageId)
+            let userMessagesRef = Database.database().reference().child("user-messages").child(fromId).child(toId).child(messageId)
             userMessagesRef.setValue(1)
             
-            let recipientUserMessagesRef = Database.database().reference().child("user-messages").child(toId).child(messageId)
+            let recipientUserMessagesRef = Database.database().reference().child("user-messages").child(toId).child(fromId).child(messageId)
             recipientUserMessagesRef.setValue(1)
             
         }
@@ -130,9 +135,9 @@ class ChatLoginController: UICollectionViewController {
     //MARK: - Observ message
     
     private func observeMessages() {
-        guard  let uid = Auth.auth().currentUser?.uid else {return}
+        guard  let uid = Auth.auth().currentUser?.uid, let toId = user?.id else {return}
         
-        let userMessagesRef = Database.database().reference().child("user-messages").child(uid)
+        let userMessagesRef = Database.database().reference().child("user-messages").child(uid).child(toId)
         userMessagesRef.observe(.childAdded, with: { (snapshot) in
             let messageId = snapshot.key
             let messagesRef = Database.database().reference().child("messages").child(messageId)
@@ -140,10 +145,7 @@ class ChatLoginController: UICollectionViewController {
                 guard let dictionary = snapshot.value as? [String: AnyObject] else {return}
                 let message = Message(dictionary: dictionary)
                 
-                if message.chatPartherId() == self.user?.id {
-                    self.messages.append(message)
-                }
-                
+                self.messages.append(message)
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }
